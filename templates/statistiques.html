@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../static/css/style.css">
+     <link rel="stylesheet" href="../static/css/kaka.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="{{ url_for('home') }}" class="logo"> <span>AFMK</span>-Genuis </a>
+
+    <nav class="navbar">
+        <a href="#vehicles">vehicles</a>
+        <a href="#services">Nos services</a>
+
+        <a href="#">Statistiques</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div id="login-btn">
+        <button class="btn" a="Formulaire.html">Connexion</button>
+        <i class="far fa-user"></i>
+    </div>
+
+</header>
+
+<div class="login-form-container">
+
+    <span id="close-login-form" class="fas fa-times"></span>
+    <form action="">
+        <h3>Connexion</h3>
+        <input type="email" placeholder="email" class="box">
+        <input type="password" placeholder="Mot de passe" class="box">
+        <p> Mot de passe oublié ?<a href="#">Cliquez ici</a> </p>
+        <input type="submit" value="login" class="btn">
+        <p>ou connectez-vous avec</p>
+        <div class="buttons">
+            <a href="#" class="btn"> google </a>
+            <a href="#" class="btn"> facebook </a>
+        </div>
+        <p>vous n'avez pas de compte ? <a href="{{ url_for('kah') }}">créer une</a> </p>
+    </form>
+
+
+
+</div>
+<br>
+
+<br>
+<br>
+<br>
+<br><br><br>
+
+<section>
+    <p id="h" style="text-align:center;">Les<span style="border-radius:50%;background-color:var(--yellow);">Statistiques</span> </p>
+
+    <br>
+    <div id="bb">
+        <div style="text-align:center">
+            <p id="abou">La répartition des clients selon keur Id</p>
+            <img src="../static/image/Figure1.png" width="350" height="280" alt="">
+        </div>
+        <div style="text-align:center">
+            <p id="abou"> la répartition des voitures</p>
+             <img src="../static/image/rr.png" alt="Chart" height="240" width="300">
+        </div>
+        <div>
+            <p id="abou"> la répartition des voitures</p>
+             <img src="../static/image/hu.png" alt="Chart" height="240" width="300">
+        </div>
+        <div>
+            <p id="abou"> la répartition des voitures</p>
+             <img src="../static/image/kk.png" alt="Chart" height="240" width="300">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"><span>Contactez</span> nous</h1>
+
+    <div class="row">
+
+       <img src="../static/image/carte.jpg" width="200" height="300"  alt="" >
+
+        <form action="">
+            <h3>Entrez en contact</h3>
+            <input type="text" placeholder="Votre nom" class="box">
+            <input type="email" placeholder="Votre email" class="box">
+            <input type="tel" placeholder="Sujet" class="box">
+            <textarea placeholder="Votre message" class="box" cols="30" rows="10"></textarea>
+            <input type="submit" value="Envoyer" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <h3>Liens rapide</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Accueil </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Vehicules </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Nos services </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Statistiques </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Commentaires </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Nous contacter </a>
+        </div>
+
+        <div class="box">
+            <h3>Nos coordonnées</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +22241065128 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +22234328230 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> afmk@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Nouakchott, Mauritanie  </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+    <div class="credit" > créé par AFMK-Genius | &#169; tout droit reservé </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="../static/js/script.js"></script>
+
+</body>
+</html>

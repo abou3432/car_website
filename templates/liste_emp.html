@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h2 align="center">Liste des employés</h2>
+
+<a href="{{ url_for('home') }}"><h4>Ajoute un(e) employé(e)</h4></a>
+
+<table style="width:100%">
+  <tr>
+    <th>Nom complet</th>
+    <th>Email</th>
+
+    <th>Date de naissance</th>
+     <th>Pays</th>
+    <th>Genre</th>
+    <th colspan="3">Actions</th>
+  </tr>
+     {% for row in emps %}
+                <tr>
+                    <td>{{row.1}}</td>
+                    <td>{{row.2}}</td>
+
+                    <td>{{row.4}}</td>
+                    <td>{{row.5}}</td>
+                    <td>{{row.6}}</td>
+
+
+                <td align="center">
+               <a href="/update_rec/{{row.0}}" >Modifier</a>
+                    </td>
+                  <td align="center">
+                <a href="/delete/{{ row.0 }}" class="btn btn-danger btn-xs" onclick="return confirm('êtes-vous sûr de vouloir supprimer cet enregistrement ?')">Supprimer</a>
+                    </td>
+      {% endfor %}
+</table>
+
+</body>
+</html>

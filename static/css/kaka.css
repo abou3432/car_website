@@ -1,0 +1,21 @@
+#abou{
+    font-family:serif;
+    text-size:10px
+}
+#bb{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:12rem;
+    font-size:2em;
+    font-family:serif;
+}
+.h{
+     font-family:serif;
+     text-align=center;
+}
+#h{
+    font-size:4.5em;
+
+    font-family:serif;
+
+}
